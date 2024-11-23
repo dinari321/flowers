@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+    --main-bgColor:#f8cef8;
+    --colorHeader:#48036F;
+    --fontHeader:"Pacifico", cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-bgColor);
+    padding: 0 100px;
+}
+.header{
+    padding:7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-family: var(--fontHeader);
+    color: var(--colorHeader);
+    font-size: 34px;
+    text-decoration: none;
+}
+.header_search{
+    display: flex;
+
+}
+.header__search_input{
+    height: 29px;
+    width: 230px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 5px 3px;
+}
+.header__search_button{
+    width: 30px;
+    height: 30px;
+    background-color: var(--colorHeader);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-image: url(../source/iconLogo.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+.header__search_input:focus{
+    transform: scale(1.1);
+    margin-right:14px;
+}
+.header__search_button:hover{
+    transform: scale(1.05);
+}
+.header__phoneNumber{
+    font-size: 23px;
+    color: var(--colorHeader);
+    font-family: var(--fontHeader);
+    text-decoration: none;
+}
+.header__shop{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    gap: 15px;
+    background-color: #117ff40f;
+    border-radius: 10%;
+    padding: 10px 7px;
+    font-size: 18px;
+    border: 1px solid var(--colorHeader);
+}   
+
+.counter{
+    font-size: 24px;
+    color: #000;
+    font-weight: 900;
+}
+.magazine{
+    font-family: var(--fontHeader);
+    letter-spacing: 2px;
+    align-self: flex-start;
+    
+}
+.header_info_shop_counter{
+   
+    
+}
+
+.shop_item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* Адаптив */
+@media (max-width:1440px) {
+    
+}
+@media (max-width:1130px) {
+    body{
+        padding: 0 25px;
+    }
+}
+@media (max-width:900px) {
+    body{
+        padding: 0 25px;
+    }
+    .header__logo{
+        font-size: 28px;
+    }
+    .header__phoneNumber{
+        font-size: 20px;
+    }
+    .header__shop{
+        font-size: 15px;
+    }
+}
+@media (max-width:768px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header__shop{
+        flex-direction: column;
+        gap: 7px;
+    }
+}
+@media (max-width:426px){
+    
+}
