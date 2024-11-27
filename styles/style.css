@@ -95,9 +95,38 @@ body{
 }
 
 
-
-
-
+.navigation__sort{
+    background-color: var(--colorHeader);
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__sort_listItem{
+    list-style: none;
+}
+.nav__sort_listItem:hover{
+    border-bottom: 1px solid var(--main-bgColor);
+    font-size: 26px;
+}
+.nav__sort-item{
+    color: var(--main-bgColor);
+    text-decoration: none;
+    font-style: var(--fontHeader);
+    font-size: 24px;
+}
+.dropList::after{
+    content: "▼";
+    color:var(--main-bgColor);
+}
+.droppedList{
+    list-style: none;
+    display: none;
+}
+.dropList:hover >.droppedList{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    }
 
 /* Адаптив */
 @media (max-width:1440px) {
